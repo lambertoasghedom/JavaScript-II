@@ -1,5 +1,12 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let x = 10
+
+function add(y) {
+  // 'x' variable is a closure since its outside of this function's scope
+  return x + y;  
+}
+console.log(add(10));
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
