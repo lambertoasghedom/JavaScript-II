@@ -72,7 +72,6 @@ console.log(multiplyNums(4, 2, product));
 
 
 function contains(item, list, cb) {
-  console.log(item, list)
   // contains checks if an item is present inside of the given array/list.
   return cb(item, list);
   // Pass true to the callback if it is, otherwise pass false.
@@ -90,8 +89,16 @@ contains('xbox', items, function () {
 
 /* STRETCH PROBLEM */
 
+const uniqueArray = ['John', 'Rob', 'Cheif', 'Rob']
+
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
+  cb();
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
+
+// figured out out to remove duplicates, but still stuck on how to pass it into a callback
+const uniqueNames = uniqueArray.filter(function (name, index) {
+  return uniqueArray.indexOf(name) >= index;
+})
